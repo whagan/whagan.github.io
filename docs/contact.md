@@ -1,5 +1,5 @@
 layout: page
 title: "CONTACT"
-permalink: /contact/
+permalink: /about/contact/
 
 ### Will Hagan
