@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "First Post"
+date:   2021-02-21 22:12:18 -0600
+categories: personal
+---
+Quick introduction: 
+
+My name is Will Hagan and I live in Memphis, TN. I recently completed my Bachelor of Science degree in Computer Science from the University of Memphis. I also have a Bachelor of Arts degree in English. I hope to continue my studies after graduation. 
+
+This blog will be a record of my work and interests. 
+
