@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Search Index"
+title: "Binary Search"
 date: 2021-06-10 12:00:00 -0000
 categories: leetcode searching binary-search easy algorithms epi geeksgeeks
 ---
@@ -42,7 +42,7 @@ However, this traversal eliminates the advantage of binary search.
 A better solution would be to continue with binary search after finding the index of any element equal to the key *k*. At this initial finding, you reduce the set of candidates by removing all elements above the current index. That is, set `high` to `mid`:
 
 ```python
-def binsearch(nums, target):
+def bin_search(nums, target):
     low = 0
     high = len(nums) - 1
     while (low < high):
@@ -65,3 +65,20 @@ Design an efficient algorithm that takes a sorted array and a key and find the i
 
 #### Solution
 
+This solution feels a bit untidy, especially the `if` conditional in the last `if-else` statement.
+
+```python
+def bin_search(nums, target):
+    low = 0
+    high = len(nums) - 1
+    while (low <= high):
+        mid = low + (high - low) // 2
+        if (nums[mid] <= target):
+            low = mid + 1
+        else:
+            high = mid - 1
+    if high == len(nums) - 1 or not nums[high] == target:
+        return -1
+    else:
+        return high + 1
+```
