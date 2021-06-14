@@ -24,7 +24,7 @@ A string over the characters "{,},(,)[,]" is said to be well-formed if the diffe
 
 Write a program that tests if a string made up of the characters is well-formed.
 
-## Solution
+### Solution
 
 * Declare a character stack *S*.
 * Traverse the expression string *exp*.
