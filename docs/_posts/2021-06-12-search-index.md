@@ -5,7 +5,7 @@ date: 2021-06-10 12:00:00 -0000
 categories: leetcode searching binary-search easy algorithms epi geeksgeeks
 ---
 
-### Leetcode
+### LeetCode
 
 **Problem 35 Binary Search** 
 
