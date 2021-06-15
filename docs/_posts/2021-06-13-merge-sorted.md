@@ -2,7 +2,7 @@
 layout: post
 title: "Merge Sorted Arrays"
 date: 2021-06-13 12:00:00 -0000
-categories: leetcode easy algorithms epi
+categories: leetcode easy algorithms epi merge-sorted-arr
 ---
 
 ### Leetcode
