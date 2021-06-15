@@ -33,3 +33,7 @@ Implement a Linked List in Python and C.
 #### LeetCode
 
 Solve 6 *Easy* problems. 
+
+#### Github Pages
+
+Create dropdown menu for cheat sheets (`pandas`, `bash`, etc)...
