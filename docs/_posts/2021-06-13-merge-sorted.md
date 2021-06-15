@@ -17,9 +17,7 @@ The final sorted array should not be returned by the function but instead be *st
 
 #### Solution
 
-
-
-[Leetcode submission]()
+[Leetcode submission](https://leetcode.com/submissions/detail/508078389/)
 
 ### Elements of Programming Interview
 
@@ -31,45 +29,28 @@ Write a program which takes as input two sorted arrays of integers and updates t
 
 #### Solution
 
+The challenge is writing the result back into the first array. Using a third array, you would merely iterate through both lists in tandem, appending the smaller of two entries to the third array. This results in O(m + n) time, where m and n are the number of entries in the arrays.
+
+In the worst case, every entry in the second array is smaller than every entry in the first array. In this scenario, you would update every entry in the first list for every entry in the second array, i.e., O(mn). Obviously, this is not ideal.
+
+The idea is to maintain three numbers: the index of the current entries being compared (one in the first array, another in the second array), and the next permissible index in the first array that may be written to. This index may contain either an empty space or an entry that has already been processed and therefore available for overwriting.
 
 ```python
-def bin_search(nums, target):
-    low = 0
-    high = len(nums) - 1
-    while (low < high):
-        mid = low + (high - low) // 2
-        if (nums[mid] == target):
-            high = mid
-        elif (nums[mid] < target):
-            low = mid + 1
-        else:
-            high = mid - 1
-    if not nums[high] == target:
-        return -1
-    else:
-        return high
-```
-
-**11.1 (Variant) Search a Sorted Array for First Occurrence of Element *Greater Than* *k***
-
-Design an efficient algorithm that takes a sorted array and a key and find the index of the *first* occurrence of an element greater than that key. 
-
-#### Solution
-
-This solution feels a bit untidy, especially the `if` conditional in the last `if-else` statement.
-
-```python
-def bin_search(nums, target):
-    low = 0
-    high = len(nums) - 1
-    while (low <= high):
-        mid = low + (high - low) // 2
-        if (nums[mid] <= target):
-            low = mid + 1
-        else:
-            high = mid - 1
-    if high == len(nums) - 1 or not nums[high] == target:
-        return -1
-    else:
-        return high + 1
+def merge(self, first, m, second, n):
+        i = m - 1
+        j = n - 1
+        idx = m + n - 1
+        while (i >= 0 and j >= 0):
+            if first[i] > second[j]:
+                first[idx] = first[i]
+                i -= 1
+            else:
+                first[idx] = second[j]
+                j -= 1
+            idx -= 1
+        while (j >= 0):
+            first[idx] = second[j]
+            idx -= 1
+            j -= 1
+        return first
 ```
