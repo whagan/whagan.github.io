@@ -6,8 +6,6 @@ permalink: /cheatsheets/
 
 
 
-#### pandas
-[here](cheatsheets/pandas.md)
+#### [pandas](_cheatsheets/pandas.md)
 
-#### shell
-[here](cheatsheets/shell.md)
+#### [shell](_cheatsheets/shell.md)
