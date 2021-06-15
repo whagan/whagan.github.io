@@ -1,3 +1,11 @@
+---
+layout: page
+title: Cheatsheets
+permalink: /cheatsheets/
+---
+
+
+
 #### pandas
 [here](cheatsheets/pandas.md)
 
