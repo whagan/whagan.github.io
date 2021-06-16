@@ -6,6 +6,7 @@
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
       {%- assign topnav = site.data[page.topnav] -%}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <h1>HERE</h1>
   
       {%- if titles_size > 0 -%}
         <nav class="site-nav">
