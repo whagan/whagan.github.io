@@ -4,9 +4,8 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-      {%- assign topnav = site.data[page.topnav] -%}
+      {%- assign topnav = site.data.topnav -%}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-      <h1>HERE</h1>
   
       {%- if titles_size > 0 -%}
         <nav class="site-nav">
@@ -31,6 +30,11 @@
                 <p>{ item }</p>
             {%- endfor -%}
             {%- endfor -%}
+          </div>
+          <div>
+            {%- for entry in topnav -%}
+            <p>{ entry }</p>
+            {%- endfor %}
           </div>
         </nav>
       {%- endif -%}
