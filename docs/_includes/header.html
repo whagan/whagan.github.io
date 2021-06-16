@@ -5,6 +5,7 @@
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
       {%- assign topnav = site.data.topnav -%}
+      
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
       {%- if titles_size > 0 -%}
@@ -18,25 +19,20 @@
             </span>
           </label>
   
-          <div class="trigger">
-            {%- for path in page_paths -%}
-              {%- assign my_page = site.pages | where: "path", path | first -%}
-              {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {%- endif -%}
+          <!-- <div class="trigger"> -->
+            {%- for entry in site.data.topnav -%}
+              <!-- {%- assign my_page = site.pages | where: "path", path | first -%} -->
+              <!-- {%- if my_page.title -%} -->
+              <a class="page-link" href="#">{{ entry }}</a>
+              <!-- {%- endif -%} -->
             {%- endfor -%}
-            {%- for entry in topnav.topnav -%}
-            {%- for item in entry.items -%}
-                <p>{ item }</p>
-            {%- endfor -%}
-            {%- endfor -%}
-          </div>
-          <div>
-            {%- for entry in topnav -%}
-            <p>{ entry.title }</p>
-            {%- endfor %}
-          </div>
+            
+          <!-- </div> -->
+
         </nav>
       {%- endif -%}
+      {%- for entry in site.data.topnav -%}
+      <a class="page-link" href="#">{{ entry.title }}</a>
+      {%- endfor -%}
     </div>
   </header>
