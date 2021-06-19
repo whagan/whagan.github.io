@@ -3,10 +3,11 @@ layout: default
 ---
 
 <ul>
-    {%- for field in site.data.domains -%}
-        <li>
-            {{ field.title }}
-        </li>
-    {%- endfor -%}
-
+    {% for member in site.data.domains %}
+    <li>
+        <h3></h3>
+        {{ member.title }}
+        </h3>
+    </li>
+{% endfor %}
 </ul>
