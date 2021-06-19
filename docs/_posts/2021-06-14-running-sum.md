@@ -2,7 +2,7 @@
 layout: post
 title: "Running Sum"
 date: 2021-06-14 12:00:00 -0000
-categories: leetcode easy algorithms epi running-sum
+categories: leetcode easy algorithms running-sum
 ---
 
 ### Leetcode

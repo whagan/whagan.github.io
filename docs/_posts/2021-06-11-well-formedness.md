@@ -31,7 +31,7 @@ Write a program that tests if a string made up of the characters is well-formed.
     1. If the current character is a starting bracket (‘(‘ or ‘{‘ or ‘[‘), then push it onto stack.
     2. If the current character is a closing bracket (‘)’ or ‘}’ or ‘]’), then pop from *S* and if the popped character is the matching starting bracket then continue. Else, the brackets are not balanced.
 
-**Time Complexity** O(n), since for each character we perform O(1) operations.
+**Time Complexity** `O(n)`, since for each character we perform `O(1)` operations.
 
 [Leetcode submission](https://leetcode.com/submissions/detail/506602193/)
 
