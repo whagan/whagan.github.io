@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: interests
 title: Interests
 permalink: /interests/
 ---
+
 
