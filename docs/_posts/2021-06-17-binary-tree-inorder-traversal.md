@@ -33,6 +33,6 @@ class Solution(object):
         return self.ret_list
 ```
 
-[Leetcode submission]()
+[Leetcode submission](https://leetcode.com/submissions/detail/511733354/)
 
 
