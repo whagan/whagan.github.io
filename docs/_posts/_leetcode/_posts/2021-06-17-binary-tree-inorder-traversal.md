@@ -7,7 +7,7 @@ categories: leetcode easy algorithms binary-tree binary-tree-inorder
 
 ### LeetCode
 
-**Problem 94 Binary Tree Traversal**
+**Problem 94 Binary Tree Inorder Traversal**
 
 Given the `root` of a binary tree, return the *inorder traversal of its nodes' values*.
 
@@ -39,9 +39,7 @@ We'll walk through the iterative algorithm.
 
 Starting with the given `root`, push all left descendants onto a stack. Notice that in the algorithm below, within the `while` statement, the `if` statement executes until every left descendant of `root` is pushed onto the stack.
 
-At this point, the stack is populated and `root` is `None` (since there are no more left descendants). That is to say, the algorithm will not begin pushing onto `order` until after `root` is `None` the first time.
-
-
+At this point, the stack is populated and `root` is `None` (since there are no more left descendants). That is to say, the algorithm will not begin pushing onto `order` until after `root` is `None` the first time. After this point, depending on the node or status of the stack, the *visit* node may be the left or right child.
 
 ```python
 class TreeNode(object):
