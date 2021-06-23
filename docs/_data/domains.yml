@@ -1,8 +1,6 @@
-
-
-- title: "Database Administration"
+- title: "Theory"
+  url: /theory
+- title: "Administration"
   url: /contact
-- title: "Systems Programming"
-  url: /about
-- title: "Computer Programming"
-  url: /about
+- title: "Engineering"
+  url: /contact

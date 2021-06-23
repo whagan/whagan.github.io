@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {% assign domains = site.data.domains %}
+  
+    <ul class="post-list">
+        {%- for domain in domains -%}
+        <li>
+            <h3>
+                <a class="post-link" href="{{ domain.url | relative_url }}">{{ domain.title | escape }}</a>
+            </h3>
+        </li>
+        {%- endfor -%}
+    </ul>
+
+
+</div>
