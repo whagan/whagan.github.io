@@ -5,7 +5,7 @@ date: 2021-06-13 12:00:00 -0000
 categories: plan 
 ---
 
-# June 13th - 149th
+# June 13th - 19th
 
 ### Algorithms and Data Structures
 
@@ -15,14 +15,11 @@ Implement a Linked List in Python and C.
 
 Solve 6 *Easy* problems. 
 
-
-
-
 ### Web Programming
 
 #### CodePen
 
-Create 4 new Pens.
+Create 2 new Pens.
  
 ### Theory
 
