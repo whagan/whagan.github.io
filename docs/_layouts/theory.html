@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {% assign fields = site.data.theory.fields %}
+  
+    <ul class="post-list">
+        {%- for field in fields -%}
+        <li>
+            <h3>
+                <a class="post-link" href="{{ field.url | relative_url }}">{{ field.title | escape }}</a>
+                <ul class="post-list-two">
+                    {%- for subfield in field.subfields -%}
+                    <li>
+                        <p>
+                            <a class="post-link-two" href="{{ subfield.url | relative_url }}">{{ subfield.title | escape }}</a>
+                        </p>
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            </h3>
+        </li>
+        {%- endfor -%}
+    </ul>
+
+</div>

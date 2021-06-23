@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: theory
 title: Theory
 permalink: /theory/
 ---
 
-# Theory

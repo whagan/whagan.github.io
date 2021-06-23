@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.post-list-two  {
+    margin-left: 0;
+    list-style: none;
+    
+
+    > li {
+        margin-bottom: $spacing-unit;
+      }
+}
+
+.post-link-two {
+    display: block;
+    @include relative-font-size(1.0);
+  }

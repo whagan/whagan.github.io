@@ -1,0 +1,69 @@
+fields:
+- title: "Algorithms"
+  url: /algorithms
+  subfields:
+    - title: "Analysis of Algorithms"
+      url: /contact
+    - title: "Searching"
+      url: /contact
+    - title: "Sorting"
+      url: /contact
+    - title: "Greedy Algorithms"
+      url: /contact
+    - title: "Divide and Conquer"
+      url: /contact
+    - title: "Graph Algorithms"
+      url: /contact
+    - title: "Dynamic Programming"
+      url: /contact
+    - title: "Recursion"
+      url: /contact
+- title: "Data Structures"
+  url: /contact
+  subfields:
+    - title: "Array"
+      url: /contact
+    - title: "Linked List"
+      url: /contact
+    - title: "Stack"
+      url: /contact
+    - title: "Queue"
+      url: /contact
+    - title: "Binary Tree"
+      url: /contact
+    - title: "Binary Search Tree"
+      url: /contact
+    - title: "Heap"
+      url: /contact
+    - title: "Hashing"
+      url: /contact
+    - title: "Graph"
+      url: /contact
+    - title: "Trees"
+      url: /contact
+- title: "Combinatorial Optimization"
+  url: /contact
+- title: "Network Flow"
+  url: /contact
+
+# algorithms:
+#   - title: "Analysis of Algorithms"
+#   - title: "Searching"
+#   - title: "Sorting"
+#   - title: "Greedy Algorithms"
+#   - title: "Divide and Conquer"
+#   - title: "Graph Algorithms"
+#   - title: "Dynamic Programming"
+#   - title: "Recursion"
+
+# data_structures:
+#   - title: "Array"
+#   - title: "Linked List"
+#   - title: "Stack"
+#   - title: "Queue"
+#   - title: "Binary Tree"
+#   - title: "Binary Search Tree"
+#   - title: "Heap"
+#   - title: "Hashing"
+#   - title: "Graph"
+#   - title: "Trees"

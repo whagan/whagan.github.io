@@ -37,9 +37,9 @@ class Solution(object):
 
 We'll walk through the iterative algorithm. 
 
-Starting with the given root, push all left descendants onto a stack. Notice that in the algorithm below, within the `while` statement, the `if` statement executes until every left descendant of `root` is pushed onto the stack.
+Starting with the given `root`, push all left descendants onto a stack. Notice that in the algorithm below, within the `while` statement, the `if` statement executes until every left descendant of `root` is pushed onto the stack.
 
-At this point, the stack is populated and root is `None` (since there are no more left descendants). That is to say, the algorithm will not begin pushing onto `order` until after root is `None` the first time.
+At this point, the stack is populated and `root` is `None` (since there are no more left descendants). That is to say, the algorithm will not begin pushing onto `order` until after `root` is `None` the first time.
 
 
 
