@@ -1,0 +1,13 @@
+{% assign items = site.data.sidebar.home.items %}
+
+<ul id="sidebar" class="nav">
+    <li class = "sidebarTitle"></li>
+    <li>
+        <a title="Recent Happenings" href="#">Recent Happenings</a>
+        <ul>
+            {% for item in items %}
+                <li><a title="{{}}" href="{{ item.url | item.external_url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>

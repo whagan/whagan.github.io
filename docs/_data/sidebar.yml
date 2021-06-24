@@ -1,0 +1,10 @@
+home:
+  items:
+    - title: "Leetcode"
+      url: /contact
+    - title: "Codepen"
+      external_url: https://codepen.io/whagan
+    - title: "Reading"
+      url: /contact
+    - title: "Class"
+      url: /contact
