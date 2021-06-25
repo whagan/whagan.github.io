@@ -16,7 +16,7 @@
   \**************************/
 /***/ (() => {
 
-eval("\n\nconsole.log(\"Hello world!\");\n\n//# sourceURL=webpack://jekyll-react-integration/./webpack/entry.js?");
+eval("\n\nconsole.log(\"Hello Will!\");\n\n//# sourceURL=webpack://jekyll-react-integration/./webpack/entry.js?");
 
 /***/ })
 
