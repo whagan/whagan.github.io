@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Binary Search Tree"
-date: 2021-06-18 12:00:00 -0000
+date: 2021-06-25 12:00:00 -0000
 categories: leetcode easy algorithms binary-search-tree 
 ---
 
