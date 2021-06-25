@@ -39,9 +39,7 @@ class Solution(object):
 
 A few words on the iterative solution.
 
-With a `preorder` traversal, at every node, the right child is pushed before the the left. For a binary tree, in which during each iteration at most only two nodes are pushed onto the stack and one node is popped, this results in the stack always containing no more than one right child element.
-
-Yeah... that sounds right...?
+With a `postorder` traversal, each node is traversed left, then right, and finally *visit*ed. Check out [this video](https://www.youtube.com/watch?v=4zVdfkpcT6U) for a good, short explanation of postorder traversal.
 
 ```python
 class TreeNode(object):
@@ -50,21 +48,24 @@ class TreeNode(object):
         self.left = left
         self.right = right
 class Solution(object):
-    def preorderTraversal(self, root):
-        if root is None:
-            return
+    def postorderTraversal(self, root):
         stack, order = [], []
-        stack.append(root)
-        while stack:
-            root = stack.pop()
-            order.append(root.val)
-            if root.right is not None:
-                stack.append(root.right)
-            if root.left is not None:
-                stack.append(root.left)
+        last = None
+        while stack or root:
+            if root is not None:
+                stack.append(root)
+                root = root.left
+            else:
+                peek = None
+                if stack:
+                    peek = stack[-1]
+                if peek.right is not None and last is not peek.right:
+                    root = peek.right
+                else:
+                    order.append(peek.val)
+                    last = stack.pop()
         return order
-
 ```
-[Leetcode submission](https://leetcode.com/submissions/detail/512212840/)
+[Leetcode submission](https://leetcode.com/submissions/detail/512239113/)
 
 
