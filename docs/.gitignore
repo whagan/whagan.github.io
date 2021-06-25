@@ -7,3 +7,7 @@ Gemfile
 Gemfile.lock
 extra/
 
+public
+node_modules
+src/assets/javascripts/bundle.js
+
