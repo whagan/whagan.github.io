@@ -38,7 +38,3 @@ class App extends Component {
 
 render(<App />, document.getElementById('root'));
 
-// ReactDOM.render(
-//     <Sidebar data={sidebarItems} />,
-//     document.getElementById('sidebar')
-//   );
