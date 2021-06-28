@@ -20,7 +20,12 @@ module.exports = {
         options: {
           presets: ["react", "env"]
         }
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+     
       ]
     }
   };

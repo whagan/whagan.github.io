@@ -1,11 +1,43 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
-import Hello from './components/Hello';
+import Sidebar from './components/Sidebar';
+
+
+var sidebarItems = [
+    {
+      "title":"Leetcode",
+      "url":"www.leetcode.com",
+      "subs":["Leetcode A", "Leetcode B", "Leetcode C"]
+      
+    },
+    {
+      "title":"Codepen",
+      "url":"codepen.io",
+      "subs":["Codepen A", "Codepen B", "Codepen C"]
+    },
+    {
+      "title":"OMSCS",
+      "url":"https://omscs.gatech.edu/",
+      "subs":["OMSCS A", "OMSCS B", "OMSCS C"]
+    },
+    {
+      "title":"Reading",
+      "url":"www.goodreads.com",
+      "subs":["Reading A", "Reading B"]
+    }
+  ]
+
 class App extends Component {
- render() {
- return (
- <Hello />
- )
- }
+    render() {
+        return (
+        <Sidebar data={sidebarItems}/>
+        )
+    }
 }
+
 render(<App />, document.getElementById('root'));
+
+// ReactDOM.render(
+//     <Sidebar data={sidebarItems} />,
+//     document.getElementById('sidebar')
+//   );
