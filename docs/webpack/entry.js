@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
 import Sidebar from './components/Sidebar';
+import '../assets/css/sidebar.css';
 
 
 var sidebarItems = [

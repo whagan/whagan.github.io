@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import '../../assets/css/sidebar.css'
+import '../../assets/css/sidebar.css';
 
 var sidebarItems = [
     {
@@ -48,7 +48,10 @@ var sidebarItems = [
     
       render()  {
         return (
+        <div class="menu">
+        <ul id ="sidebar" class="sidebar">
         <ul>
+
             { this.state.items.map((item, index) => (
             <li key={index}>
                 <a onClick={() => this.show(item.subs)} className="menu-btn">
@@ -66,7 +69,9 @@ var sidebarItems = [
                  }
             </li>
       ))}
-      </ul>);
+      </ul>
+      </ul>
+      </div>);
       } 
     }
     export default Sidebar;
