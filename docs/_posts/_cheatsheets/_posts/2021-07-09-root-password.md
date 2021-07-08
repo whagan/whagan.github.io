@@ -5,8 +5,6 @@ date: 2021-07-09 12:00:00 -0000
 categories: cheatsheets reset linux grub root password
 ---
 
-#### Resetting the root password
-
 [Sander Van Vugt's videos and book](https://www.sandervanvugt.com/) are exceptional resources. I highly recommend them and I credit him with these instructions.
 
 Resetting root password:

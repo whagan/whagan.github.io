@@ -5,8 +5,6 @@ date: 2021-07-07 12:00:00 -0000
 categories: cheatsheets set-up virtualbox centos
 ---
 
-#### CentOS in VirtualBox
-
 In preparation for the RHCSA, I'm setting up a virtual machine for Red Hat using VirtualBox. I'm using a free copy of the discontinued CentOS distribution (I had given some thought to trying out the CLoudLinux OS - perhaps next time).
 
 [Sander Van Vugt's videos and book](https://www.sandervanvugt.com/) are exceptional resources. I highly recommend them.
