@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "July 09 2021"
-date: 2021-07-07 12:00:00 -0000
+title: "Resetting root Password"
+date: 2021-07-09 12:00:00 -0000
 categories: cheatsheets reset linux grub root password
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "July 07 2021"
+title: "VirtualBox - CentOS"
 date: 2021-07-07 12:00:00 -0000
 categories: cheatsheets set-up virtualbox centos
 ---
