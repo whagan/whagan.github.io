@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Binary Search Tree"
+title: "Search in a Binary Search Tree"
 date: 2021-06-25 12:00:00 -0000
 categories: leetcode easy algorithms binary-search-tree 
 ---
 
-### LeetCode
-
-**Problem 700 Search in a Binary Search Tree**
+**Problem 700**
 
 Given the `root` of a binary search tree and an integer `val`, find the node in the binary search tree whose value is equal to `val` and return the subtree rooted with that node. If the node does not exist, return `null`.
 
